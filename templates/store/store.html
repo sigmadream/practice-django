@@ -14,10 +14,8 @@
     <!-- ========================= SECTION CONTENT ========================= -->
     <section class="section-content padding-y">
         <div class="container">
-
             <div class="row">
                 <aside class="col-md-3">
-
                     <div class="card">
                         <article class="filter-group">
                             <header class="card-header">
@@ -138,7 +136,8 @@
                                                 <span class="price">$ {{ product.price }}</span>
                                             </div> <!-- price-wrap.// -->
                                         </div>
-                                        <a href="#" class="btn btn-block btn-primary">Added to cart </a>
+                                        <a href="{% url 'add_cart' product.id %}" class="btn btn-block btn-primary">Added
+                                            to cart </a>
                                     </figcaption>
                                 </figure>
                             </div> <!-- col.// -->
