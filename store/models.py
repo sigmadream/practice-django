@@ -20,6 +20,9 @@ class Product(models.Model):
         return reverse('product_detail', args=[self.category.slug, self.slug])
 
     def __str__(self):
+        return self.__unicode__()
+
+    def __unicode__(self):
         return self.product_name
 
 
@@ -48,4 +51,7 @@ class Variation(models.Model):
     objects = VariationManager()
 
     def __str__(self):
-        return self.product.product_name
+        return self.__unicode__()
+
+    def __unicode__(self):
+        return self.variation_value
