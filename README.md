@@ -5,9 +5,7 @@
 ## install
 
 ```shell
-$ git clone https://github.com/sigmadream/practice-django.git
-$ cd practice-django
 $ python -m venv venv
 $ .\venv\Scripts\activate
-$ (venv) pip install -r requestments.txt
+$ (venv) pip install -r requirements.txt
 ```
