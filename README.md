@@ -9,3 +9,11 @@ $ python -m venv venv
 $ .\venv\Scripts\activate
 $ (venv) pip install -r requirements.txt
 ```
+
+## run
+
+```
+$ python .\manage.py migrate
+$ python .\manage.py createsuperuser
+$ python .\manage.py runserver
+```
